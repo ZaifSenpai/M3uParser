@@ -18,7 +18,7 @@ class track():
     ..\Minus The Bear - Planet of Ice\Minus The Bear_Planet of Ice_01_Burying Luck.mp3
 """
 
-def parsem3u(infile):
+def parseM3U(infile):
     try:
         assert(type(infile) == '_io.TextIOWrapper')
     except AssertionError:
