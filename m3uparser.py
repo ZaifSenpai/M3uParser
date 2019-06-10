@@ -1,6 +1,7 @@
 # more info on the M3U file format available here:
 # http://n4k3d.com/the-m3u-file-format/
 
+import _io
 import sys
 
 class track():
@@ -20,7 +21,7 @@ class track():
 
 def parseM3U(infile):
     try:
-        assert(type(infile) == '_io.TextIOWrapper')
+        assert(type(infile) == _io.TextIOWrapper)
     except AssertionError:
         infile = open(infile,'r')
 
